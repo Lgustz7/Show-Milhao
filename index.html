@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <title>Show do Milhão</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <div id="card">
+        <h3 id="pontos">Pontos: 0</h3>
+        <h2 id="CampoPergunta"></h2>
+        <ul id="CampoAlternativas"></ul>
+        <button onclick="funcStart()" id="btn">Start</button>
+    </div>
+    <i data-lucide="rotate-ccw" onclick="recarregarAPagina()" id="btnReiniciar"></i>
+
+
+    <script src="./src/reiniciar.js"></script>
+    <script src="./src/game.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
