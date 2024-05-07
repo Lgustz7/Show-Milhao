@@ -2,13 +2,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(251, 253, 255);
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
-
+ 
 #card {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
     background-color: ghostwhite;
     border-radius: 12px;
@@ -39,10 +41,23 @@ body {
     border: 1px solid black;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+    cursor: pointer;
+}
+
+#btnReiniciar:active{
+    animation: spin .3s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
 }
 
 /* Aumentar o li no mobile/melhorar a jogabilidade */
-@media only screen and (max-width: 442px) {
+@media only screen and (max-width: 720px) {
     body {
         display: flex;
         align-items: center;
@@ -50,7 +65,31 @@ body {
     }
 
     #card {
+        position: absolute;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
         width: 90%;
-        height: 70%;
+        height: 50%;
     }
+}
+
+ul{
+    list-style-type: none;
+}
+ul li {
+    margin: 30px 10px;
+    height: 25px;
+    width: 90%;
+    background-color: rgb(231, 231, 238);
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .6s;
+}
+ul li:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.logo{
+    height: 200px;
 }
