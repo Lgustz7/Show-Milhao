@@ -86,8 +86,8 @@ const perguntas = [
     },
     {
         pergunta: 'Qual é o resultado da expressão (6 * 4) - (10 / 2)?',
-        alternativas: ['A) 20', 'B) 22', 'C) 24', 'D) 26'],
-        respostaCorreta: 'C'
+        alternativas: ['A) 20', 'B) 22', 'C) 24', 'D) 19'],
+        respostaCorreta: 'D'
     },
     // Adicione mais perguntas aqui  
 ];
