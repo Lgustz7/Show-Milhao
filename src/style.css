@@ -10,7 +10,7 @@ body {
 #card {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 65%;
     transform: translate(-50%, -50%);
     background-color: ghostwhite;
     border-radius: 12px;
@@ -67,7 +67,7 @@ body {
     #card {
         position: absolute;
         left: 50%;
-        top: 75%;
+        top: 60%;
         transform: translate(-50%, -50%);
         width: 90%;
         height: 50%;

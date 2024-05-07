@@ -2,6 +2,7 @@ const CampoPergunta = document.querySelector('#CampoPergunta');
 const CampoAlternativas = document.querySelector('#CampoAlternativas');
 const pontos = document.querySelector('#pontos');
 const perguntas = [
+
     {
         pergunta: 'Qual é a capital do Brasil?',
         alternativas: ['A) Rio de Janeiro', 'B) São Paulo', 'C) Brasília', 'D) Salvador'],
@@ -38,6 +39,56 @@ const perguntas = [
         alternativas: ['A) Ouro', 'B) Ferro', 'C) Alumínio', 'D) Cobre'],
         respostaCorreta: 'C'
     },
+    {
+        pergunta: 'Qual é o planeta mais próximo do Sol?',
+        alternativas: ['A) Mercúrio', 'B) Marte', 'C) Vênus', 'D) Terra'],
+        respostaCorreta: 'A'
+    },
+    {
+        pergunta: 'Qual é o processo pelo qual as plantas produzem seu próprio alimento?',
+        alternativas: ['A) Respiração', 'B) Fotossíntese', 'C) Transpiração', 'D) Decomposição'],
+        respostaCorreta: 'B'
+    },
+    {
+        pergunta: 'Qual é a capital da França?',
+        alternativas: ['A) Londres', 'B) Berlim', 'C) Paris', 'D) Roma'],
+        respostaCorreta: 'C'
+    },
+    {
+        pergunta: 'Qual é o maior animal do mundo?',
+        alternativas: ['A) Elefante africano', 'B) Baleia-azul', 'C) Girafa', 'D) Hipopótamo'],
+        respostaCorreta: 'B'
+    },
+    {
+        pergunta: 'Qual é a capital da Itália?',
+        alternativas: ['A) Madrid', 'B) Paris', 'C) Roma', 'D) Atenas'],
+        respostaCorreta: 'C'
+    },
+    {
+        pergunta: 'Qual é o símbolo químico do elemento Ouro?',
+        alternativas: ['A) Au', 'B) Ag', 'C) Fe', 'D) Cu'],
+        respostaCorreta: 'A'
+    },
+    {
+        pergunta: 'Qual é o país com a maior área territorial do mundo?',
+        alternativas: ['A) Rússia', 'B) Canadá', 'C) Estados Unidos', 'D) China'],
+        respostaCorreta: 'A'
+    },
+    {
+        pergunta: 'Qual é o maior deserto do mundo?',
+        alternativas: ['A) Deserto do Saara', 'B) Deserto de Atacama', 'C) Deserto da Antártica', 'D) Deserto da Arábia'],
+        respostaCorreta: 'A'
+    },
+    {
+        pergunta: 'Qual é o maior rio do mundo em extensão?',
+        alternativas: ['A) Rio Nilo', 'B) Rio Amazonas', 'C) Rio Yangtzé', 'D) Rio Mississipi'],
+        respostaCorreta: 'B'
+    },
+    {
+        pergunta: 'Qual é o resultado da expressão (6 * 4) - (10 / 2)?',
+        alternativas: ['A) 20', 'B) 22', 'C) 24', 'D) 26'],
+        respostaCorreta: 'C'
+    },
     // Adicione mais perguntas aqui  
 ];
 
@@ -69,11 +120,12 @@ function funcStart() {
 
 function verificaResposta(indice) {
     if (perguntas[perguntaAtual].respostaCorreta === perguntas[perguntaAtual].alternativas[indice][0]) {
-        alert("Resposta correta!");
+        // alert("Resposta correta!");
         contadorPontos++; // Incrementa o contador de pontos
 
     } else {
-        alert("Resposta errada!");
+        // alert("Resposta errada!");
+        contadorPontos-- // Decrementa o contador de pontos
     }
     perguntaAtual++; // Avança para a próxima pergunta
     pontos.textContent = 'Pontos: ' + contadorPontos; // Atualiza a pontuação
